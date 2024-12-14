@@ -46,6 +46,8 @@
     box-shadow: 0 0 10px 5px rgba(88, 88, 88, 0.1);
     background-color: rgb(241, 241, 241);
     transition: 350ms ease all;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.626);
 }
 
 @media only screen and (max-width: 1050px) {
@@ -71,6 +73,11 @@
 
 .story-card:hover {
     transform: scale(1.1);
+    
+}
+
+.story-card:not(:hover) {
+    transform: scale(0.9);
 }
 
 .story-card a.story-link {

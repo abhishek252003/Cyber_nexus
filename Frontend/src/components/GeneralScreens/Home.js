@@ -51,7 +51,7 @@ const Home = () => {
       }
     }
     getStories()
-  }, [setLoading, search, page, navigate])
+  }, [setLoading, search, page, navigate, searchKey])
 
 
   useEffect(() => {
@@ -75,6 +75,12 @@ const Home = () => {
 
         :
         <div>
+           {/* <iframe id="player" type="text/html" width="1000" height="350"
+              src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+              frameborder="0" style={{  border:'2px solid white', borderRadius: '70px' ,marginLeft: '300px', marginTop: "50px", boxShadow: '0 4px 20px rgba(0, 0, 0, 1)' }}></iframe> */}
+  
+            
+
           <div className="story-card-wrapper">
             {stories.length !== 0 ?
               stories.map((story) => {
@@ -83,9 +89,33 @@ const Home = () => {
                 )
               }) : <NoStories />
             }
+
             <img className="bg-planet-svg" src="planet.svg" alt="planet" />
             <img className="bg-planet2-svg" src="planet2.svg" alt="planet" />
             <img className="bg-planet3-svg" src="planet3.svg" alt="planet" />
+            {/* <iframe >src = "http://www.c-sharpcorner.com/" height= {300px} width= {400px}< /iframe>   */}
+            
+            <div style={{ position: 'relative', width: '100%', paddingBottom: '36.25%', marginLeft: 'auto', marginRight: 'auto', marginTop: "50px" }}>
+              <iframe 
+                src="https://www.youtube.com/embed/qVET1vD3NtQ?si=Lqar8E1rqt_HytEc&amp;start=83" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen 
+                style={{ 
+                  position: 'absolute', 
+                  top: 0, 
+                  left: 0, 
+                  width: '100%', 
+                  height: '100%', 
+                  border: '2px solid white', 
+                  borderRadius: '70px', 
+                  boxShadow: '0 4px 20px rgba(0, 0, 0, 1)' 
+                }}>
+              </iframe>
+            </div>
+
 
           </div>
 
