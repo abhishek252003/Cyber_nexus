@@ -9,12 +9,12 @@
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
         "@testing-library/user-event": "^13.5.0",
-        "axios": "^0.25.0",
+        "axios": "^1.7.9",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-icons": "^4.3.1",
         "react-router-dom": "^6.2.1",
-        "react-scripts": "5.0.0",
+        "react-scripts": "^3.0.1",
         "uuid": "^8.3.2",
         "web-vitals": "^2.1.4"
     },
@@ -43,6 +43,8 @@
         ]
     },
     "devDependencies": {
-        "webpack-bundle-analyzer": "^4.10.2"
+        "webpack": "^5.97.1",
+        "webpack-bundle-analyzer": "^4.10.2",
+        "webpack-cli": "^5.1.4"
     }
 }
